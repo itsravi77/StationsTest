@@ -1,4 +1,4 @@
-package com.hsbc;
+package com.hsbc.compliance.stations;
 
 import org.junit.Test;
 

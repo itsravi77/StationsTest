@@ -4,8 +4,10 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.xml.bind.annotation.XmlRootElement;
 
 @Entity
+@XmlRootElement
 public class Station {
 
     @Id
@@ -15,7 +17,7 @@ public class Station {
     private String name;
 
     //Required protected for Spring JPA
-    protected Station() {}
+    public Station() {}
 
     public Station(String name) {
         this.name = name;

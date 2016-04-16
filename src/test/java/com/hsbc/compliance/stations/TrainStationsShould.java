@@ -14,6 +14,6 @@ public class TrainStationsShould {
         expect().
                 body("name", equalTo("DARTFORD")).
         when().
-                get("/stattion/search/DART");
+                get("/station/search/DART");
     }
 }

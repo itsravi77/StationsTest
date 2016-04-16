@@ -15,7 +15,7 @@
 	</parent>
 
 	<properties>
-		<jersey.version>1.19.1</jersey.version>
+		<!--<jersey.version>1.19.1</jersey.version>-->
 	</properties>
 	
 	<dependencies>

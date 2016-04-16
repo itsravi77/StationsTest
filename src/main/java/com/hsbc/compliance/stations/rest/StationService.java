@@ -19,7 +19,7 @@ public class StationService {
     @Path("/search/{name}")
     public StationResult getString(@PathParam("name") String name) {
         StationResult result = new StationResult();
-        result.setStations(Arrays.asList(new Station(name), new Station("Sukheja")));
+        result.setStations(Arrays.asList(new Station("DARTFORD"), new Station("DARTMOUTH")));
 
         return result;
     }

@@ -12,7 +12,7 @@ public class TrainStationsShould {
     @Test
     public void returnDartfordAndDartmouthWhenLookingForDART() {
         expect().
-                body("name", equalTo("DARTFORD")).
+                content(equalTo("{\"stations\": [{\"name\": \"DARTFORD\"},{\"name\": \"DARTMOUTH\"}]}")).
         when().
                 get("/station/search/DART");
     }

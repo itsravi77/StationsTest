@@ -92,7 +92,6 @@ public class TrainStationsTest {
 
     @Test
     public void returnErrorCode404ForNonExistenceService() {
-        given().port(8080).then().statusCode(503).
         expect()
                 .statusCode(404).
         when()
